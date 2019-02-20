@@ -1,6 +1,9 @@
 package com.xxx.test;
 
+import java.lang.Thread.State;
 import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.logging.Logger;
 
 public class Test02 {
 
@@ -86,10 +89,41 @@ public class Test02 {
 		}
 	}
 	
+	static void quick_sort(int arr[],int start,int end) {
+		if (start<end) {
+			
+		}
+	}
+	
+	static long fib(int n) {
+		if (n==1) {
+			return 1;
+		}else if (n==2) {
+			return 2;
+		}else {
+			long res = 0;
+			long a = 1;
+			long b = 2;
+			for (int i = 2; i < n; i++) {
+				res = a+b;
+				a = b;
+				b = res;
+			}
+			
+			return res;
+		}
+	}
+	
 
 
 	public static void main(String[] args) {
-		test_List();
+		
+		long res = fib(5);
+		System.out.println("fib n = 4 ,res = "+res);
+		
+		ConcurrentHashMap<String, String> cMap = new ConcurrentHashMap<>();
+		cMap.put("hello", "world");
+		cMap.get("hello");
 		
 		Vector<Integer> vector = new Vector<>();
 		vector.add(0);

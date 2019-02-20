@@ -1,9 +1,7 @@
 package com.xxx.test;
 
-import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.Base64;
-import java.util.BitSet;
 import java.util.Map;
 import java.util.Random;
 import javax.script.ScriptEngine;
